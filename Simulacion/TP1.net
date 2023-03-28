@@ -1,0 +1,35 @@
+* C:\Users\BZeroL\OneDrive - ITBA\Education\ITBA\ITBA - Me\2023A\Electronica IV\TPs\TP1\Simulacion\TP1.asc
+Q1 VL+ N001 N002 0 BC547B
+Q2 N001 N004 0 0 BC547B
+Q3 0 N001 N002 0 BC557B
+M1 Vd Vg 0 0 IRF530
+D1 Vd Vout MUR460
+R6 Vg N002 100
+R1 N004 N003 470
+R4 Vd VL- 0.5
+R3 N001 VL+ 1k
+R5 Vtrig N003 470
+L1 VL+ VL- 220µ
+V2 VL+ 0 12
+C1 Vout 0 10µ
+R2 Vout 0 100
+V3 Vtrig 0 PULSE(5 0 1u 1n 1n {DT*T} {T})
+.model D D
+.lib C:\Users\BZeroL\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\BZeroL\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\BZeroL\Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 0 4.05m 4m 1n
+* Vin = 12V
+* Vo=24V
+* Delta Vo=5%
+* Fsw 60KHz
+;.params DT = 0.55275
+.params T=16.666u
+;.params DT = 0.5438447187
+.params DT = 0.51
+.backanno
+.end
