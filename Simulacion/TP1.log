@@ -1,21 +1,21 @@
-Circuit: * C:\Users\BZeroL\OneDrive - ITBA\Education\ITBA\ITBA - Me\2023A\Electronica IV\TPs\TP1\Simulacion\TP1.asc
+Circuit: * C:\Users\carlo\OneDrive\Escritorio\2023_1C\E4\TPs\TP1\TP1-Convertidores-DC-DC-MOS\Simulacion\TP1.asc
 
 Direct Newton iteration for .op point succeeded.
 
-Date: Tue Mar 28 18:50:45 2023
-Total elapsed time: 26.778 seconds.
+Date: Mon Apr 10 20:15:35 2023
+Total elapsed time: 38.821 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 9371199
-traniter = 9371164
-tranpoints = 4074504
-accept = 4066528
-rejected = 7976
-matrix size = 26
-fillins = 9
+totiter = 9472231
+traniter = 9472196
+tranpoints = 4060015
+accept = 4057186
+rejected = 2829
+matrix size = 29
+fillins = 11
 solver = Normal
-Matrix Compiler1:     124 opcodes  0.5/[0.2]/0.3
-Matrix Compiler2: off  [0.2]/0.3/0.2
+Matrix Compiler1: 2.38 KB object code size  1.2/0.7/[0.5]
+Matrix Compiler2: 2.48 KB object code size  0.9/0.9/[0.7]
 
